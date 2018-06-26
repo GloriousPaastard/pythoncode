@@ -12,10 +12,11 @@ db = SQLAlchemy(app)
 # GET request to ip.jsontest.com
 def home():
 	# My microservice!
+	# My microservice123!
     return render_template('home.html')
 
 def rest_request_example():
-    print (requests.get("http://ip.jsontest.com/").text)
+    print (requests.get("http://140.86.15.104:3000/shield/33/45/Your_microservice_name_goes_here").text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()

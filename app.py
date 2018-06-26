@@ -28,10 +28,10 @@ def read_db_SQL_example():
     print(rows)
 	
 rest_request_example()
-try:
-	read_db_SQL_example()
-except:
-	print ('Could not connect to database')
+#try:
+#	read_db_SQL_example()
+#except:
+#	print ('Could not connect to database')
 	
 if __name__ == '__main__':
     app.run(host=app.config['HOST'], port=app.config['PORT'])

@@ -16,11 +16,11 @@ def home():
     return render_template('home.html')
 
 def rest_request_example():
-    print (requests.get("http://140.86.15.104:3000/fighters/45/9/blue/GloriousPaastard").text)
+    print (requests.get("http://140.86.15.104:3000/reactorCore/33/45/blue/GloriousPaastard").text)
 
 def read_db_SQL_example():
     conn = db.get_engine().connect()
-    sql = "SELECT * FROM SampleTable"
+    sql = "SELECT * FROM SecretTable"
     results = conn.execute(sql)
     rows = ""
     for row in results:
